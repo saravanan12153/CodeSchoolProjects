@@ -35,3 +35,24 @@ p {
 a {
 
 }
+
+/******************************************
+*   Hero 
+******************************************/
+
+.hero {
+    background-color: #7E6B8F;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+/******************************************
+*   Logo 
+******************************************/
+
+.logo {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
