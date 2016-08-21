@@ -3,7 +3,8 @@
 *   Front-end News Stylesheet 
 *
 *   White:                  #FFFFFF
-*   Grey(Spanish Grey)      #999999
+*   Grey(Light)             #B6B6B6
+*   Grey(Dark)              #212121
 *   Blue(Winter Wizard)     #A3D9FF
 *   Violet(French Lilac)    #7E6B8F
 *   Green(Teal Deer)        #96E6B3
@@ -21,13 +22,9 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 ol {
-
-}
-ul {
-
-}
-li {
-
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 p {
 
@@ -43,6 +40,7 @@ a {
 .hero {
     background-color: #7E6B8F;
     padding: 20px 0;
+    margin-bottom: 40px;
     text-align: center;
     color: #ffffff;
 }
@@ -55,4 +53,27 @@ a {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+/******************************************
+*   News
+******************************************/
+
+.news-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #B6B6B6;
+    margin-bottom: 20px;
+}
+.news-link {
+    color: #7E6B8F;
+    font-size: 24px;
+}
+
+/******************************************
+*   Content
+******************************************/
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
 }
