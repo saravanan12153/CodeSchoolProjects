@@ -22,7 +22,8 @@ body {
     line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
-
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 ol,ul {
     padding: 0;
@@ -73,6 +74,11 @@ a:active {
     border-bottom: 1px solid #B6B6B6;
     margin-bottom: 20px;
 }
+.news-item:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
 .news-link {
     color: #7E6B8F;
     display: block;
@@ -86,6 +92,14 @@ a:active {
 
 /******************************************
 *   Content
+******************************************/
+
+.content {
+    margin-bottom: 40px;
+}
+
+/******************************************
+*   Container
 ******************************************/
 
 .container {
@@ -121,6 +135,64 @@ a:active {
     padding: 10px;
     width: 100%;
     font-size: 20px;
+}
+
+/******************************************
+*   Modal
+******************************************/
+
+.modal {
+    background-color: #ffffff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.5);
+    left: 50%;
+    position: absolute;
+    top: 40px;
+    width: 500px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -5%);
+    transition: all .4s ease-in-out;
+}
+.modal.is-visible {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+.modal-media {
+    position: relative;
+}
+.modal-media-title {
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+}
+.modal-content {
+    padding: 20px;
+}
+.modal-overlay {
+    background-color: #212121;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+.modal-overlay.is-visible {
+    opacity: .4;
+    visibility: visible;
 }
 
 /******************************************
